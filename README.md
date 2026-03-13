@@ -1,5 +1,5 @@
 
-# NZ Cloud Baseline (AWS) — Terraform, Private EC2 via SSM, ALB front door
+# Cloud Baseline (AWS) — Terraform, Private EC2 via SSM, ALB front door
 
 Secure baseline AWS infrastructure using Terraform. Demonstrates production-minded patterns: private compute (no SSH), controlled ingress via ALB, and repeatable create/destroy for interview demos.
 

@@ -71,9 +71,9 @@ set -euo pipefail
 mkdir -p /home/ec2-user/nz-demo
 cat > /home/ec2-user/nz-demo/index.html <<'HTML'
 <html>
-  <head><title>NZ Cloud Baseline</title></head>
+  <head><title>Cloud Baseline</title></head>
   <body>
-    <h1>NZ Cloud Baseline</h1>
+    <h1>Cloud Baseline</h1>
     <p>Private EC2 behind ALB, managed via SSM (no SSH, no NAT).</p>
   </body>
 </html>
@@ -82,7 +82,7 @@ chown -R ec2-user:ec2-user /home/ec2-user/nz-demo
 
 cat > /etc/systemd/system/nz-demo.service <<'UNIT'
 [Unit]
-Description=NZ Cloud Baseline demo web server
+Description=Cloud Baseline demo web server
 After=network-online.target
 Wants=network-online.target
 
